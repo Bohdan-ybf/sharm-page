@@ -1,0 +1,771 @@
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Clash Display";
+    src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/ClashDisplay-Medium.woff') format('woff'),
+        url('../font/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: Medium;
+    font-display: swap;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.page__title {
+    font-family: "Clash Display";
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.page__title-center {
+    text-align: center;
+}
+
+.page__title-right {
+    text-align: right;
+}
+
+.title-black {
+    color: #030303;
+}
+
+.title-white {
+    color: #F9F9F7;
+}
+
+.section__page {
+    margin-bottom: 50px;
+}
+
+/* ===END BASE=== */
+
+
+/* Header */
+
+.header {
+    padding: 40px 0;
+}
+
+.header__wrapper {
+    display: grid;
+    grid-template-columns: 15% 1fr 35%;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.header__nav__group {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.header__nav-link {
+    color: #030303;
+    text-align: center;
+    font-family: "Clash Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.header__nav__btn__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    justify-content: flex-end;
+}
+
+.header__nav__btn {
+    text-align: center;
+    font-family: "Clash Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+    display: flex;
+    padding: 16px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 54px;
+
+    border-radius: 90px;
+}
+
+.nav__left {
+    color: #FFE2C9;
+    border: 1px solid #FFE2C9;
+    background: transparent;
+}
+
+.nav__right {
+    color: #030303;
+    border: 1px solid #FFE2C9;
+    background: #FFE2C9;
+}
+
+.nav__left:hover {
+    color: #030303;
+    border: 1px solid #FFE2C9;
+    background: #FFE2C9;
+}
+
+.nav__right:hover {
+    color: #FFE2C9;
+    border: 1px solid #FFE2C9;
+    background: transparent;
+}
+
+/* END Header */
+
+
+/* Banner */
+
+.section__banner {
+    margin-bottom: 150px;
+}
+
+.banner__wrapper {
+    height: 650px;
+}
+
+.banner__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-image: url(../../public/img/banner-bg.png);
+    right: -430px;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.banner__wrapper::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 665px;
+    background-image: url(../../public/img/baner-g.png);
+    right: -260px;
+    top: 95px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.banner__wrapper {
+    height: 650px;
+}
+
+.banner__wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 728px;
+    height: 650px;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner__title {
+    color: #030303;
+    font-family: "Clash Display";
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.banner__sub__title {
+    width: 100%;
+    max-width: 622px;
+    color: #030303;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 60px;
+}
+
+.benner__btn {
+    display: flex;
+    padding: 15px 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 90px;
+    background: #E63B1D;
+    color: #FCFCFC;
+    text-align: center;
+    font-family: "Clash Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    border: 1px solid #E63B1D;
+    transition: all ease .2s;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.benner__btn:hover {
+    background: transparent;
+    color: #E63B1D;
+}
+
+/* END Banner */
+
+
+/* About us */
+.about__wrapper {
+    display: flex;
+}
+
+.content__text-italic {
+    color: #030303;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+
+.about__content__text {
+    color: #030303;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 32px;
+    padding-left: 58px;
+}
+
+
+/* END About us */
+
+/* Advantages */
+
+.page-adv {
+    margin-bottom: 200px;
+}
+
+.advantages__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.advantages__box {
+    position: relative;
+    height: 260px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.advantages__title {
+    color: #E63B1D;
+    font-family: "Clash Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.advantages__text {
+    color: #030303;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.advantages__box::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: inherit;
+    z-index: -1;
+    transition: all ease .3s;
+}
+
+.advantages__box:hover::before {
+    transform: scale(-1, 1);
+}
+
+.advantages__order-1::before {
+    background-image: url("/src/Resources/public/img/advantages-1.svg");
+}
+
+.advantages__order-2::before {
+    background-image: url("/src/Resources/public/img/advantages-2.svg");
+}
+
+.advantages__order-3::before {
+    background-image: url("/src/Resources/public/img/advantages-3.svg");
+}
+
+/* END Advantages */
+
+/* SLIDER */
+
+.slider__gallery {
+    border-radius: 20px;
+}
+
+.slick-arrow {
+    top: -90px;
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.slider__gallery-img {
+    width: 100%;
+}
+
+.slick-arrow:hover {
+    opacity: 80%;
+}
+
+.slick-prev-c {
+    right: 50px;
+}
+
+.slick-next-c {
+    right: 0;
+}
+
+.slick-arrow.slick-disabled {
+    filter: grayscale(100%);
+    opacity: 50%;
+    transition: all ease .3s;
+}
+
+/* END SLIDER */
+
+/* SERVICE */
+
+.service__cover {
+    position: relative;
+}
+
+.service__cover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1045px;
+    background-image: url(../../public/img/service-bg.png);
+    right: -135px;
+    top: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.service__wrapper {
+    position: relative;
+    height: 575px;
+    display: flex;
+    justify-content: center;
+}
+
+.service__text {
+    width: 100%;
+    max-width: 495px;
+    color: #F9F9F7;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    padding: 50px 0 50px 80px;
+}
+
+.flip-box {
+    position: absolute;
+    background-color: transparent;
+    perspective: 1000px;
+}
+
+.flip-box-order-1 {
+    top: 0;
+    left: 0;
+    width: 425px;
+    height: 419px;
+}
+
+.flip-box-order-2 {
+    right: 0;
+    width: 295px;
+    height: 290px;
+}
+
+.flip-box-order-3 {
+    top: 65%;
+    right: 20%;
+    width: 445px;
+    height: 468px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    color: black;
+}
+
+.flip-box-back {
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-box-back {
+    border-radius: 10px;
+}
+
+.flip-box-back>ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 35px;
+}
+
+.flip-box-back>ul>li {
+    list-style: disc;
+}
+
+.flip-box-back>ul>li>a {
+    color: #FCFCFC;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.flip-box-back>ul>li>a:hover {
+    color: #E63B1D;
+}
+
+.flip-box-back>ul>li:hover::marker {
+    color: #E63B1D;
+}
+
+.flip-img {
+    border-radius: 10px;
+}
+
+.flip-box-back-order-1 {
+    background-image: url(../../public/img/flip-img/flip-back-1.jpg);
+}
+
+.flip-box-back-order-2 {
+    background-image: url(../../public/img/flip-img/flip-back-2.jpg);
+}
+
+.flip-box-back-order-3 {
+    background-image: url(../../public/img/flip-img/flip-back-3.jpg);
+}
+
+.title-p {
+    padding-top: 40px;
+}
+
+.section__service {
+    height: 1200px;
+}
+
+/* END SERVICE */
+
+
+/*  BENEFITS */
+
+.benefits__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.benefits__box {
+    width: 100%;
+    max-width: 337px;
+    border-radius: 60px 0px;
+    border: 1px solid #E63B1D;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 24px;
+    transition: all ease .5s;
+}
+
+.benefits__icon {
+    margin-bottom: 24px;
+}
+
+.benefits__title {
+    color: #030303;
+    font-family: "Clash Display";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.benefits__text {
+    color: #030303;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+}
+
+.benefits__box:hover {
+    background: #E63B1D;
+    transition: all ease .5s;
+    border-radius: 0px 60px;
+}
+
+.benefits__box:hover>.benefits__icon>path {
+    stroke: #fff;
+}
+
+.benefits__box:hover .benefits__title,
+.benefits__box:hover .benefits__text {
+    color: #fff;
+}
+
+/* END BENEFITS */
+
+
+/* FOOTER */
+
+.footer__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+}
+
+.footer__wrapper::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    background-image: url(../../public/img/benefits-cov.svg);
+    right: -500px;
+    top: -700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 5;
+}
+
+.footer {
+    position: relative;
+    background: #030303;
+    padding: 80px 0 40px;
+}
+
+
+.footer__text__info {
+    width: 100%;
+    max-width: 459px;
+    color: #FCFCFC;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-bottom: 1px solid #FFE2C9;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.footer__contact__wrapper {
+    display: grid;
+    grid-template-columns: 35% 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 10px;
+    margin-bottom: 60px;
+}
+
+.footer__contact__box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__contact__title {
+    color: #E63B1D;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+
+.footer__contact__text {
+    color: #FCFCFC;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__nav__wrapper {
+    display: grid;
+    grid-template-columns: 10% 35% 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #E3E3E3;
+    margin-bottom: 30px;
+}
+
+.footer__nav__text {
+    color: #E3E3E3;
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__nav__container {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+}
+
+
+.footer__nav-link {
+    color: #F9F9F7;
+    text-align: center;
+    font-family: "Clash Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+
+}
+
+.footer__copyright__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copyright__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+}
+
+.footer__copyright__text {
+    color: #E3E3E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__copyright__link {
+    color: #E3E3E3;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__social__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer__social__link:hover>svg>path {
+    fill: #E63B1D;
+}
+
+.footer__map__img {
+    transition: all ease .3s;
+}
+
+.footer__map__img:hover {
+    transition: all ease .3s;
+    filter: drop-shadow(5px 5px 15px #E63B1D);
+}
+
+/* END FOOTER */
