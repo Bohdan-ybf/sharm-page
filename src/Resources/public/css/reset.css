@@ -29,8 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-html{ 
-	overflow-x: hidden;
+html, body {
+    overflow-x: hidden;
 }
 body {
 	line-height: normal;
