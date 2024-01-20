@@ -332,15 +332,15 @@
 }
 
 .advantages__order-1::before {
-    background-image: url("/src/Resources/public/img/advantages-1.svg");
+    background-image: url("../../public/img/advantages-1.svg");
 }
 
 .advantages__order-2::before {
-    background-image: url("/src/Resources/public/img/advantages-2.svg");
+    background-image: url("../../public/img/advantages-2.svg");
 }
 
 .advantages__order-3::before {
-    background-image: url("/src/Resources/public/img/advantages-3.svg");
+    background-image: url("../../public/img/advantages-3.svg");
 }
 
 /* END Advantages */
