@@ -12,6 +12,7 @@
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/Resources/public/css/reset.css">
+    <link rel="stylesheet" href="./src/Resources/public/css/modal.css">
     <link rel="stylesheet" href="./src/Resources/public/css/style.css">
     <title>SHARM</title>
     <meta name="description" content="SHARM description">
@@ -25,21 +26,33 @@
 
 <body>
 
-    <header style="display: none;" class="header">
+
+    <header class="header">
         <div class="container">
             <div class="header__wrapper">
                 <a class="header__logo" href="#"><img src="./src/Resources/public/img/logo.svg" alt="sharm-logo"></a>
                 <nav class="header__nav__wrapper">
                     <ul class="header__nav__group">
-                        <li class="header__nav-item"><a class="header__nav-link" href="#">About us</a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#">OUR WORKS</a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#">services</a></li>
-                        <li class="header__nav-item"><a class="header__nav-link" href="#">benefits</a></li>
+                        <li class="header__nav-item"><a data-goto=".anhr-1" class="header__nav-link" href="#">About
+                                us</a></li>
+                        <li class="header__nav-item"><a data-goto=".anhr-2" class="header__nav-link" href="#">OUR
+                                WORKS</a></li>
+                        <li class="header__nav-item"><a data-goto=".anhr-3" class="header__nav-link"
+                                href="#">services</a></li>
+                        <li class="header__nav-item"><a data-goto=".anhr-4" class="header__nav-link"
+                                href="#">benefits</a></li>
+
+
                     </ul>
                 </nav>
                 <div class="header__nav__btn__wrapper">
                     <button class="header__nav__btn nav__left">Contact Us</button>
                     <button class="header__nav__btn nav__right">calendar</button>
+                </div>
+                <div class="nav__mobile__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
             </div>
         </div>
@@ -53,13 +66,13 @@
                     <h1 class="banner__title">Max out your beauty</h1>
                     <p class="banner__sub__title">Leveraging 25 years of experience, we deliver personalized hair
                         care that aligns with your essence.</p>
-                    <div class="benner__btn">Services</div>
+                    <a data-goto=".anhr-3" class="header__nav-link benner__btn" href="#">services</a>
                 </div>
             </div>
         </section>
 
         <!-- ABOUT US -->
-        <section class="section__page">
+        <section class="section__page anhr-1">
             <div class="container">
                 <h2 class="page__title title-black">/ About us</h2>
             </div>
@@ -101,7 +114,7 @@
         </section>
 
         <!-- SLIDER -->
-        <section class="section__page section__banner">
+        <section class="section__page section__banner anhr-2">
             <div class="container">
                 <h2 class="page__title page__title-center title-black">/ OUR WORKS</h2>
                 <div class="slider__gallery">
@@ -126,71 +139,71 @@
         </section>
 
         <!-- SERVICES -->
-        <section class="section__page section__service">
+        <section class="section__page section__service anhr-3">
             <div class="container">
                 <div class="service__cover"></div>
                 <h2 class="page__title page__title-right title-white title-p">/ Services</h2>
                 <div class="service__wrapper">
                     <p class="service__text">At Charm, we specialize in a variety of hair care services to cater to your
                         unique needs, ensuring optimal results and satisfaction.</p>
-                        <div class="test">
-                    <div class="flip-box flip-box-order-1">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img class="flip-img" src="./src/Resources/public/img/flip-img/flip-1.jpg"
-                                    alt="sharm-service">
-                            </div>
-                            <div class="flip-box-back flip-box-back-order-1">
-                                <ul>
-                                    <li><a href="#">Express treatment (5min)</a></li>
-                                    <li><a href="#">Luxury treatment (20min)</a></li>
-                                    <li><a href="#">Clarifying treatment</a></li>
-                                    <li><a href="#">Consultations</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-box flip-box-order-2">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img class="flip-img" src="./src/Resources/public/img/flip-img/flip-2.jpg"
-                                    alt="sharm-service">
-                            </div>
-                            <div class="flip-box-back flip-box-back-order-2">
-                                <ul>
-                                    <li><a href="#">Face framing</a></li>
-                                    <li><a href="#">Comb on colour</a></li>
-                                </ul>
+                    <div class="test">
+                        <div class="flip-box flip-box-order-1">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img class="flip-img" src="./src/Resources/public/img/flip-img/flip-1.jpg"
+                                        alt="sharm-service">
+                                </div>
+                                <div class="flip-box-back flip-box-back-order-1">
+                                    <ul>
+                                        <li><a href="#">Express treatment (5min)</a></li>
+                                        <li><a href="#">Luxury treatment (20min)</a></li>
+                                        <li><a href="#">Clarifying treatment</a></li>
+                                        <li><a href="#">Consultations</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <div class="flip-box flip-box-order-2">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img class="flip-img" src="./src/Resources/public/img/flip-img/flip-2.jpg"
+                                        alt="sharm-service">
+                                </div>
+                                <div class="flip-box-back flip-box-back-order-2">
+                                    <ul>
+                                        <li><a href="#">Face framing</a></li>
+                                        <li><a href="#">Comb on colour</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
 
-                    <div class="flip-box flip-box-order-3">
-                        <div class="flip-box-inner">
-                            <div class="flip-box-front">
-                                <img class="flip-img" src="./src/Resources/public/img/flip-img/flip-3.jpg"
-                                    alt="sharm-service">
-                            </div>
-                            <div class="flip-box-back flip-box-back-order-3">
-                                <ul>
-                                    <li><a href="#">Total Colour</a></li>
-                                    <li><a href="#">Hairline</a></li>
-                                    <li><a href="#">Bleach and Tone</a></li>
-                                    <li><a href="#">Toners</a></li>
-                                    <li><a href="#">Balayage</a></li>
-                                    <li><a href="#">HLTS / Lowlights — Full head </a></li>
-                                    <li><a href="#">HLTS / Lowlights — Half head </a></li>
-                                </ul>
+                        <div class="flip-box flip-box-order-3">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img class="flip-img" src="./src/Resources/public/img/flip-img/flip-3.jpg"
+                                        alt="sharm-service">
+                                </div>
+                                <div class="flip-box-back flip-box-back-order-3">
+                                    <ul>
+                                        <li><a href="#">Total Colour</a></li>
+                                        <li><a href="#">Hairline</a></li>
+                                        <li><a href="#">Bleach and Tone</a></li>
+                                        <li><a href="#">Toners</a></li>
+                                        <li><a href="#">Balayage</a></li>
+                                        <li><a href="#">HLTS / Lowlights — Full head </a></li>
+                                        <li><a href="#">HLTS / Lowlights — Half head </a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </section>
 
         <!-- BENEFITS -->
-        <section class="section__page section__benefits page-adv">
+        <section class="section__page section__benefits page-adv anhr-4">
             <div class="container">
                 <h2 class="page__title page__title-center title-black">/ Benefits</h2>
                 <div class="benefits__wrapper">
@@ -247,8 +260,9 @@
         <div class="container-fluid">
             <div class="footer__wrapper">
                 <div class="footer__col">
-                    <a href="https://maps.app.goo.gl/LYN3nTTVvYgGgzjf8" target="_blank"><img class="about-img footer__map__img"
-                            src="./src/Resources/public/img/footer-map.png" alt="footer-map"></a>
+                    <a href="https://maps.app.goo.gl/LYN3nTTVvYgGgzjf8" target="_blank"><img
+                            class="about-img footer__map__img" src="./src/Resources/public/img/footer-map.png"
+                            alt="footer-map"></a>
                 </div>
                 <div class="footer__col">
                     <h2 class="page__title title-white">/contacts</h2>
@@ -316,6 +330,34 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal">
+        <div class="modal-block">
+            <form>
+                <span class="btn-close">X</span>
+                <h3 class="modal-title">FORM</h3>
+                <div class="form-filed">
+                    <input class="form__fied-input" type="text" placeholder="Ваше имя">
+                </div>
+                <div class="form-filed">
+                    <input class="form__fied-input" type="tel:" placeholder="Номер телефона">
+                </div>
+                <div class="form-filed">
+                    <input class="form__fied-input" type="mail" placeholder="Вам email">
+                </div>
+                <div class="form-filed">
+                    <p class="form__fied__input-title">Дата заезда</p>
+                    <input class="form__fied-input" type="date" id="start" name="trip-start" value="2022-01-01"
+                        min="2022-01-01" max="2022-12-31">
+                </div>
+                <div class="form-filed">
+                    <p class="form__fied__input-title">Ваши пожелания</p>
+                    <input class="form__fied-input" type="text" placeholder="Коментарий">
+                </div>
+                <button class="modal-send">Отправить</button>
+            </form>
+        </div>
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
